@@ -7,7 +7,6 @@ bag class for python. Inspired by smalltalk
 import bag
 
 b = bag.Bag(1, 2, 3, 'yellow', 1)
-
 b.add(2)
 
 -> bag.Bag(1, 2, 3, 'yellow', 1, 2)
@@ -23,31 +22,24 @@ len(b)
 out = ''
 
 for i in b:
-
     out += str(i)
 
 out
-
 -> '22yellow{1, 2, 3}311'
 
 len(b)
-
 -> 0
 
 b.add(2)
-
 b.add(1)
 
 len(b)
-
 -> 2
 
 b.pop()
-
 -> 1
 
 b.pop()
-
 -> 2
 ```
 
@@ -78,11 +70,9 @@ Concatenates 2 bags. Creates a new bag.
 
 ```python
 a = bag.Bag(1)
-
 b = bag.Bag(2)
 
 a + b
-
 -> bag.Bag(1, 2)
 ```
 ---
@@ -95,11 +85,9 @@ Tests if an element is in the bag.
 a = bag.Bag(2)
 
 1 in a
-
 -> False
 
 2 in a
-
 -> True
 ```
 
@@ -113,10 +101,8 @@ Prints a string representation of a bag. Safe for recursive values.
 a = bag.Bag()
 
 repr(a)
-
 -> bag.Bag()
 
 a.add(a)
-
 -> bag.Bag(...)
 ```
