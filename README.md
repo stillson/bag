@@ -3,7 +3,8 @@ bag class for python. Inspired by smalltalk
 
 # usage
 
-`import bag
+```python
+import bag
 
 b = bag.Bag(1, 2, 3, 'yellow', 1)
 
@@ -47,7 +48,8 @@ b.pop()
 
 b.pop()
 
--> 2`
+-> 2
+```
 
 # methods
 
@@ -74,6 +76,7 @@ Add an element to the bag.
 
 Concatenates 2 bags. Creates a new bag.
 
+```python
 a = bag.Bag(1)
 
 b = bag.Bag(2)
@@ -81,13 +84,14 @@ b = bag.Bag(2)
 a + b
 
 -> bag.Bag(1, 2)
-
+```
 ---
 
 `in`
 
 Tests if an element is in the bag.
 
+```python
 a = bag.Bag(2)
 
 1 in a
@@ -97,6 +101,7 @@ a = bag.Bag(2)
 2 in a
 
 -> True
+```
 
 ---
 
@@ -104,6 +109,7 @@ a = bag.Bag(2)
 
 Prints a string representation of a bag. Safe for recursive values.
 
+```python
 a = bag.Bag()
 
 repr(a)
@@ -113,3 +119,4 @@ repr(a)
 a.add(a)
 
 -> bag.Bag(...)
+```
