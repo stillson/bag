@@ -8,7 +8,10 @@ except ImportError:
 try:
     from _thread import get_ident
 except ImportError:
-    from dummy_thread import get_ident
+    try:
+        from thread import get_ident
+    except ImportError:
+        from dummy_thread import get_ident
 
 RAND = Random()
 

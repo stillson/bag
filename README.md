@@ -1,5 +1,9 @@
 # bag
-bag class for python. Inspired by smalltalk
+bag class for python. Inspired by the smalltalk class of the same name. 
+It works by holding any number of elements, and returning them in a random
+order. It works like the proverbial bag with a white stone and a black stone
+when discussing probability. You add elements in any order, then retrieve
+them using pop, getting a random element which is removed from the bag.
 
 # usage
 
