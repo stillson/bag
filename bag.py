@@ -2,7 +2,7 @@ try:
     # rdrand is a drop in replacement for random
     # that uses real randomness from the cpu
     # faster, and more random...
-    from rdrand import Random
+    from rdrand import RdRandom as Random
 except ImportError:
     from random import Random
 try:
